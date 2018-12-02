@@ -74,6 +74,9 @@ const cli = meow(help, {
     },
     clear: {
       type: 'boolean'
+    },
+    font: {
+      type: 'boolean'
     }
   }
 });

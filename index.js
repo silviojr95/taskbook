@@ -65,6 +65,10 @@ const taskbookCLI = (input, flags) => {
     return taskbook.clear();
   }
 
+  if (flags.font) {
+    return taskbook.font(input);
+  }
+
   taskbook.displayByBoard();
   return taskbook.displayStats();
 };
